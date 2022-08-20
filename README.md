@@ -62,4 +62,8 @@ echo "Hello $USER_NAME"
 echo "I will create you a file called ${USER_NAME}_file"
 touch "${USER_NAME}_file"
 ```
-The quotes around ensure that if user enter "Steve Parker", the the argument pass to touch would be Steve and Parker file, which produce 2 separated files. 
+The quotes around ensure that if user enter "Steve Parker", the the argument pass to touch would be Steve and Parker file, which produce 2 separated files.
+
+
+## Acknowledgement
+I followed the tutorial from: [Link](https://www.shellscript.sh/)
