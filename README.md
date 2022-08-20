@@ -51,4 +51,15 @@ echo "Hello $USER_NAME"
 echo "I will create you a file called $USER_NAME_file"
 touch $USER_NAME_file
 ```
+This will lead to error because there is no variable USER_NAME_file
 
+Fix by user.sh
+```shell
+#!/bin/sh
+echo "What is your name?"
+read USER_NAME
+echo "Hello $USER_NAME"
+echo "I will create you a file called ${USER_NAME}_file"
+touch "${USER_NAME}_file"
+```
+The quotes around ensure that if user enter "Steve Parker", the the argument pass to touch would be Steve and Parker file, which produce 2 separated files. 
