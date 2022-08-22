@@ -64,6 +64,15 @@ touch "${USER_NAME}_file"
 ```
 The quotes around ensure that if user enter "Steve Parker", the the argument pass to touch would be Steve and Parker file, which produce 2 separated files.
 
+## Wildcards
+You can use wildcard character to select everything. For example, you want to copy all files from **/tmp/a** to **/tmp/b**. You can use:
+```shell
+$ cp /tmp/a/* /tmp/b/
+$ cp /tmp/a/*.txt /tmp/b/
+$ cp /tmp/a/*.html /tmp/b
+```
+## Escape characters
+
 
 ## Acknowledgement
 I followed the tutorial from: [Link](https://www.shellscript.sh/)
